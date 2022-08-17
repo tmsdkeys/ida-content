@@ -130,8 +130,7 @@ Modules **do not send packets through callbacks**, since the modules initiate th
 module must trigger execution on the port-bound module through the use of callbacks. Thus, to send a packet a module simply needs to call `SendPacket` on the `IBCChannelKeeper`.
 
 ::: warning
-In order to prevent modules from sending packets on channels they do not own, IBC expects
-modules to pass in the correct channel capability for the packet's source channel.
+In order to prevent modules from sending packets on channels they do not own, IBC expects modules to pass in the correct channel capability for the packet's source channel.
 :::
 
 ##### Receiving packets
